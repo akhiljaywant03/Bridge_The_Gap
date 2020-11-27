@@ -12,7 +12,7 @@
     </div>
 
     <div class="nav-bar">
-      <a class="active custom-1" href="">Home</a>
+      <a class="active custom-1" href="home.html">Home</a>
       <a class="custom-2" href="">Invest</a>
       <a class="custom-3" href="">Get Funded</a>
       <a class="custom-4" href="">Contact</a>
@@ -33,21 +33,25 @@
     </div>
     <div class="login-content">
       <h1 class="main-heading">Welcome</h1>
-      <input
-        class="email"
-        type="text"
-        placeholder="Email or Phone"
-        name="Email"
-      />
-      <input
-        class="password"
-        type="password"
-        placeholder="Password"
-        name="Password"
-      />
-      <p class="forgot-pass">Forgot Password?</p>
-      <button class="login">Login</button>
-      <button class="sign-up">Sign up</button>
+      <form action="/loginBoth" method="POST">
+
+     
+        <input
+          class="email"
+          type="text"
+          placeholder="Email or Phone"
+          name="Email"
+        />
+        <input
+          class="password"
+          type="password"
+          placeholder="Password"
+          name="Password"
+        />
+        <p class="forgot-pass">Forgot Password?</p>
+        <button type="submit" class="login">Login</button>
+        <button type="submit" class="sign-up">Sign up</button>
+    </form>
     </div>
     <div class="main-image">
       <img class="img-main" src="assets/19871.jpg" alt="" />
